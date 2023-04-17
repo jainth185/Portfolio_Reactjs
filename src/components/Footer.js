@@ -1,5 +1,5 @@
 import "./FooterStyles.css"
-import {FaFacebook, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaTwitter} from "react-icons/fa";
+import {FaFacebook, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaGithub} from "react-icons/fa";
 import React from 'react'
 
 const Footer = () => {
@@ -31,9 +31,9 @@ const Footer = () => {
                 I'm an adaptive person who adapts in all situations and places.
                 Change is something which helps me grow. </p>
                 <div className="social">
-                <FaFacebook size={30} style={{color:"#fff", marginRight:"1rem"}} />
-                <FaTwitter size={30} style={{color:"#fff", marginRight:"1rem"}} />
-                <FaLinkedin size={30} style={{color:"#fff", marginRight:"1rem"}} />
+                <a target="__blank" href="https://www.facebook.com/profile.php?id=100011755170614"><FaFacebook size={30}  className="fb-icon"/></a>
+                <a target="__blank" href="https://github.com/jainth185"><FaGithub size={30} className="Tw-icon"/></a>
+                <a target="__blank" href="https://www.linkedin.com/in/jainth-a-555592225/"><FaLinkedin size={30} className="Lin-icon"/></a>
                 </div>
             </div>
         </div>

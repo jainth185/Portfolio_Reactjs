@@ -44,6 +44,24 @@ h4{
     font-size: 1.2rem;
     padding-bottom: 0.7rem;
 }
+.social .fb-icon{
+    
+    color:#fff;
+    margin-right:1rem;
+    cursor: pointer;
+}
+.social .Tw-icon{
+    
+    color:#fff;
+    margin-right:1rem;
+    cursor: pointer;
+}
+.social .Lin-icon{
+    
+    color:#fff;
+    margin-right:1rem;
+    cursor: pointer;
+}
 
 p{
     font-size: 1.2rem;

@@ -3,6 +3,9 @@
     text-transform: uppercase;
     padding: 2rem 0 2rem 0;
 }
+.work-container{
+    max-height: 100%;
+}
 
 .project-container{
     max-width: 1140px;
