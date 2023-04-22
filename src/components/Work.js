@@ -2,12 +2,16 @@ import "./WorkCardStyles.css";
 import React from 'react'
 import WorkCard from "./WorkCard";
 import WorkCardData from "./WorkCardData";
+import WorkCardData1 from "./WorkCardData1";
+
+
 
 
 const Work = () => {
   return (
+    <>
     <div className="work-container">
-        <h1 className="project-heading">Projects</h1>
+        <h1 className="project-heading">Figma Projects</h1>
         <div className="project-container">
             {WorkCardData.map((val,ind)=>{
                 return(
@@ -22,6 +26,26 @@ const Work = () => {
             })}
         </div>
     </div>
+    <div className="work-container">
+        <h1 className="project-heading">Projects</h1>
+        <div className="project-container">
+            {WorkCardData1.map((val,ind)=>{
+                return(
+                    <WorkCard
+                    key={ind}
+                    imgsrc={val.imgsrc}
+                    title={val.title}
+                    text={val.text}
+                    view={val.view}
+                    source={val.source}
+                    />
+                )
+            })}
+        </div>
+    </div>
+
+    </>
+    
   )
 }
 
