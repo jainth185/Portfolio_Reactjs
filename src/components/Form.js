@@ -1,44 +1,39 @@
 import "./FormStyles.css"
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 
 const Form = () => {
   
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [subject, setSubject]= useState("");
-    const [message, setMessage]=useState("");
-    const handleOnSubmit = async (e) => {
-        e.preventDefault();
-        let result = await fetch('http://localhost:5000/register', {
-            method: "post",
-            body: JSON.stringify({ name, email, subject, message }),
-            headers: {
-                'Content-Type': 'application/json'
-            }
+    // const [name, setName] = useState("");
+    // const [email, setEmail] = useState("");
+    // const [subject, setSubject]= useState("");
+    // const [message, setMessage]=useState("");
+    const handleSubmit = (event) => {
+        event.preventDefault();
+      
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+        
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
         })
-        result = await result.json();
-        console.warn(result);
-        if (result) {
-            alert("Thank you for your message !!");
-            setEmail("");
-            setName("");
-            setSubject("");
-            setMessage("");
-        }
-    }
+          .then(() => console.log("Form successfully submitted"))
+          .catch((error) => alert(error));
+      };
   return (
-    <div className="form">
+    <div className="form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <form>
             <label>Your Name</label>
-            <input type={"text"} value={name} onChange={(e) => setName(e.target.value)}></input>
+            <input type="text" name="name"></input>
             <label>Email</label>
-            <input type={"email"} value={email} onChange={(e) => setEmail(e.target.value)}></input>
+            <input type="email" name="email"></input>
             <label>Subject</label>
-            <input type={"text"} value={subject} onChange={(e) => setSubject(e.target.value)}></input> 
+            <input type="text" name="subject"></input> 
             <label>Message</label>
-            <textarea rows="6" placeholder="Type your message here" value={message} onChange={(e) => setMessage(e.target.value)}/>
-            <button className="btn" onClick={handleOnSubmit}>Sumbit</button>
+            <textarea rows="6" placeholder="Type your message here" name="message"/>
+            <button className="btn" onClick={handleSubmit}>Sumbit</button>
       </form>
     </div>
   )
