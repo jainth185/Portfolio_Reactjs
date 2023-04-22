@@ -24,7 +24,7 @@ const Form = () => {
     //   };
   return (
     <div className="form">
-        <form name="contact" method="post" data-netlify="true" onSumbit="submit">
+        <form name="contact" method="post" data-netlify="true" onSumbit="submit" action="/contact">
             <input type="hidden" name="form-name" value="contact"/>
             <label>Your Name</label>
             <input type="text" name="name"></input>
