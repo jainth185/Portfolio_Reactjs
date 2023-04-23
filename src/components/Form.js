@@ -25,7 +25,7 @@ const Form = () => {
   return (
     <div className="form">
         <form action="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="/"/>
+            {/* <input type="hidden" name="form-name" value="/"/> */}
             <label>Your Name</label>
             <input type="text" name="name"></input>
             <label>Email</label>
