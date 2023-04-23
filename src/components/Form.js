@@ -24,8 +24,10 @@ const Form = () => {
     //   };
   return (
     <div className="form">
-        <form action="POST" data-netlify="true">
-            {/* <input type="hidden" name="form-name" value="/"/> */}
+        <form name="contact" method="POST" data-netlify="true">
+          
+          <input type="hidden" name="form-name" value="contact"/>
+
             <label>Your Name</label>
             <input type="text" name="name"></input>
             <label>Email</label>
@@ -35,7 +37,6 @@ const Form = () => {
             <label>Message</label>
             <textarea rows="6" placeholder="Type your message here" name="message"/>
             <button className="btn" type="sumbit">Sumbit</button>
-            <div data-netlify-recaptcha="true"></div>
       </form>
     </div>
   )
