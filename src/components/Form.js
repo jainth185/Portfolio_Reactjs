@@ -24,9 +24,9 @@ const Form = () => {
     //   };
   return (
     <div className="form">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="Contact" method="POST" data-netlify="true">
           
-          <input type="hidden" name="form-name" value="contact"/>
+          <input type="hidden" name="form-name" value="Contact"/>
 
             <label>Your Name</label>
             <input type="text" name="name"></input>
