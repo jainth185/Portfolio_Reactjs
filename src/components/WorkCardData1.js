@@ -16,8 +16,8 @@ const ProjectCardData1= [
         imgsrc: pro2,
         title: "Grament E-commerce",
         text: "The front end of a garments ecommerce website typically includes a visually appealing and user-friendly interface that allows customers to browse, search, and purchase products. It may include features such as a homepage showcasing popular products, navigation menus to filter products by category, search bar, product listings with images, prices, and descriptions, product reviews and ratings, shopping cart and checkout pages, and customer account pages for order tracking and management. The front end design should be responsive to accommodate different screen sizes and devices and enjoyable shopping experience for the customers. ",
-        view: "https://github.com/jainth185/VVM_Garments",
-        source:"https://vvmgarments.netlify.app"
+        view: "https://vvmgarments.netlify.app",
+        source:"https://github.com/jainth185/VVM_Garments"
     },
     // {
     //     imgsrc: pro3,
