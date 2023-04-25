@@ -24,14 +24,12 @@ const Form = () => {
     //   };
   return (
     <div className="form">
-        <form name="Contact" method="POST" data-netlify="true">
-          
-          <input type="hidden" name="form-name" value="Contact"/>
+        <form action="https://formsubmit.co/jainthasokan185@gmail.com" method="POST">
 
             <label>Your Name</label>
-            <input type="text" name="name"></input>
+            <input type="text" name="name" pattern=".{5,}" title="Minimum 10 characters"  required></input>
             <label>Email</label>
-            <input type="email" name="email"></input>
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" title="Match the email format" required></input>
             <label>Subject</label>
             <input type="text" name="subject"></input> 
             <label>Message</label>
