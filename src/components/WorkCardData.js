@@ -21,12 +21,12 @@ const ProjectCardData = [
         title: "Clothing",
         text: "The clothing e-commerce landing page Figma design is a visually stunning and highly engaging web page that welcomes visitors to a stylish online shopping experience. The design features a full-width header with a striking hero image of a model wearing the latest fashion trends. The header also includes a prominent call-to-action button that invites users to start shopping right away.Overall, the clothing e-commerce landing page Figma design is a visually appealing and user-friendly website",
         view: "https://www.figma.com/file/cgYxcbcBWvQHMkO1Pl76ts/Transit_card?t=0Ty8HHNGEBnr12Qn-1"
-    },
-    {
-        imgsrc: pro4,
-        title: "Pets",
-        text: "The pet ecommerce website Figma design is a visually appealing and user-friendly platform that allows customers to easily browse, search, and purchase a wide range of pet products. The design features a clean and modern layout with a prominent search bar and intuitive navigation menu, making it easy for users to find what they're looking for. The product pages display detailed information, high-quality images, and customer reviews, helping shoppers make informed purchasing decisions. The checkout process is streamlined and straightforward, with multiple payment options and order tracking available for added convenience. ",
-        view: "https://www.figma.com/file/MW7F99dmJuWTGNssh927gD/pets?t=0Ty8HHNGEBnr12Qn-1"
     }
+    // {
+    //     imgsrc: pro4,
+    //     title: "Pets",
+    //     text: "The pet ecommerce website Figma design is a visually appealing and user-friendly platform that allows customers to easily browse, search, and purchase a wide range of pet products. The design features a clean and modern layout with a prominent search bar and intuitive navigation menu, making it easy for users to find what they're looking for. The product pages display detailed information, high-quality images, and customer reviews, helping shoppers make informed purchasing decisions. The checkout process is streamlined and straightforward, with multiple payment options and order tracking available for added convenience. ",
+    //     view: "https://www.figma.com/file/MW7F99dmJuWTGNssh927gD/pets?t=0Ty8HHNGEBnr12Qn-1"
+    // }
 ]
 export default ProjectCardData ;
